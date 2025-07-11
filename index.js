@@ -7,6 +7,9 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname+'/index.html')
 })
 
+app.use(express.static(__dirname+'/assets'))
+
+
 http.listen(3000, () => {
     console.log('Сервер стартанул')
 })
