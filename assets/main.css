@@ -1,3 +1,13 @@
+body {
+    color: blue
+}
+
+h1 {
+    color: greenyellow
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +18,3 @@
     
 }
 
-body {
-    color: blue
-}
-
-h1 {
-    color: greenyellow
-}
