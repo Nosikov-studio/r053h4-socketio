@@ -25,4 +25,5 @@ socket.on('chat message', (data) => {
     const item = document.createElement('li')
     item.innerHTML =`<span>${data.name} </span>: ${data.message}`
     messages.appendChild(item)
+    window.scrollTo(0, document.body.scrollHeight)
 })
