@@ -11,6 +11,8 @@ app.get('/', (req, res) => {
 app.use(express.static(__dirname + '/assets'))
 
 io.on('connection', (socket)=>{
+    console.log('socket ID', socket.id)
+    
     socket.on('chat message', (data)=>{
         io.emit('chat message', {
             message: data.message,
